@@ -266,9 +266,10 @@ main{
 .product{
   
   width: 200px;
-  height: 300px;
+  height: 310px;
   border-radius: 10px;
-  background-color: #ffc53a;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .product-image{
@@ -279,3 +280,24 @@ main{
 }
 
 /* .info-block */
+.product-price{
+  /* vertical-align:middle; */
+  font-size: 20px;
+  height: 3.4vh;
+  font-weight: bold;
+}
+
+.product-date{
+  color: rgb(55, 55, 55);
+  font-size: 13px;
+}
+
+.product-name{
+  font-size: 17px;
+  height: 3vh;
+  color: rgb(65, 65, 244);
+}
+
+.product-category{
+  height: 3.6vh;
+}
