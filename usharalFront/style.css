@@ -264,6 +264,7 @@ main{
 }
 */
 .product{
+  
   width: 200px;
   height: 300px;
   border-radius: 10px;
@@ -277,6 +278,4 @@ main{
   height: 171px;
 }
 
-.innerMain{
-  
-}
+/* .info-block */
