@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- Navbar -->
+
+    <header id="header" class="bg-dark ">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a href="./index.html" class="navbar-brand">usharal.kz</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target = "#navContent"
+                aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navContent">
+                    <ul class="navbar-nav mb-3 mb-lg-0 w-100 d-flex justify-content-between">
+                        <li class="nav-item">
+                            <div class="d-flex">
+                                <a href="#" class="nav-link">рус&nbsp; |</a>
+                                <!-- <p class="text-light mb-0">|</p> -->
+                                <a href="#" class="nav-link p-0 pt-2">қаз</a>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fa-regular fa-user "></i>&nbsp;Личный кабинет
+                            <i class="fas arrow fa-angle-down"></i></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class=" fa-regular fa-heart"></i>&nbsp;Избранное</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fa-regular fa-comment"></i>&nbsp;Сообщения</a>
+                        </li>
+
+                        <form action="#" class="d-flex">
+                        
+                            <button class="btn btn-outline-warning">Подать обьявление</button>
+    
+                        </form> 
+                        
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">&nbsp;Log in</a>
+                        </li>
+                    </ul>
+                    
+                    
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<!-- Navbar ends -->
+
+<!-- Search -->
+
+    <div class="search col-xl-12 col-md-12 d-flex justify-content-center mt-4">
+          <div class="searchArea d-flex">
+            <div onclick="myFunction(this.className)" class="wholeList">
+                <button class=" wholeList-btn centralize {{cat[category]}}">Личные<br>вещи <i
+                        class="fas arrow fa-angle-down m-lg-2"></i></button>
+                <div id="myDropdown" class="wholeList-content">
+                    <a href="" class="lng-categories-two" style="display: none">Все категории</a>
+                </div>
+            </div>
+            <div class="inputArea">
+                <input type="text" class='lng-searchPlaceHolder search-input' placeholder="Найти объявление..." name=""
+                    id="">
+            </div>
+            <div class="searchBtn">
+                <button class="fas fa-search"></button>
+            </div>
+        </div>
+    </div>
+
+<!-- End search -->
+
+<!-- Categories -->
+
+    <div class="categories mt-4">
+        
+        <div class="allCategories">
+            <div class="allCategoriesChild">
+                <form action="/{{lang}}" method="post" class="category">
+                    <button>
+                    <!-- <img class="categoryImage" src="{{ url_for('static', filename='img/services.svg') }}" alt="">  
+                        оставил как пример того как выглядел код раньше. пришлосб убрать чтобы фотки поставить -->
+                        <img class="categoryImage" src="./img/services.svg" alt="">
+                        <span class="textForImg lng-service">Услуги</span>
+                        <input hidden value="Услуги" name="category">
+                    </button>
+                </form>
+                <form action="/{{lang}}" method="post" class="category">
+                    <button>
+                        <img class="categoryImage" src="img/gadgets.svg" alt="">
+                        <span class="textForImg lng-gadgets">Электроника</span>
+                        <input hidden value="Электроника" name="category">
+                    </button>
+                </form>
+                <form action="/{{lang}}" method="post" class="category">
+                    <button>
+                        <img class="categoryImage" src="img/personalItems.svg" alt="">
+                        <span class="textForImg lng-personalItems">Личные вещи</span>
+                        <input hidden value="Личные вещи" name="category">
+                    </button>
+                </form>
+                <form action="/{{lang}}" method="post" class="category">
+                    <button>
+                        <img class="categoryImage" src="img/child.svg" alt="">
+                        <span class="textForImg lng-child">Детям</span>
+                        <input hidden value="Детям" name="category">
+                    </button>
+                </form>
+                <form action="/{{lang}}" method="post" class="category">
+                    <button>
+                        <img class="categoryImage" src="img/business.svg" alt="">
+                        <span class="textForImg lng-business">Для Бизнеса</span>
+                        <input hidden value="Для Бизнеса" name="category">
+                    </button>
+                </form>
+                <form action="/{{lang}}" method="post" class="category">
+                    <button>
+                        <img class="categoryImage" src="img/animals.svg" alt="">
+                        <span class="textForImg lng-animals">Животные</span>
+                        <input hidden value="Животные" name="category">
+                    </button>
+                </form>
+                <form action="/{{lang}}" method="post" class="category">
+                    <button>
+                        <img class="categoryImage" src="img/garden.svg" alt="">
+                        <span class="textForImg lng-house">Для дома</span>
+                        <input hidden value="Для дома" name="category">
+                    </button>
+                </form>
+                <form action="/{{lang}}" method="post" class="category">
+                    <button>
+                        <img class="categoryImage" src="img/job.svg" alt="">
+                        <span class="textForImg lng-job">Работа</span>
+                        <input hidden value="Работа" name="category">
+                    </button>
+                </form>
+                <form action="/{{lang}}" method="post" class="category">
+                    <button>
+                        <img class="categoryImage" src="img/hobby.svg" alt="">
+                        <span class="textForImg lng-hobby">Хобби и спорт</span>
+                        <input hidden value="Хобби и спорт" name="category">
+                    </button>
+                </form>
+                <form action="/{{lang}}" method="post" class="category">
+                    <button>
+                        <img class="categoryImage" src="img/apartments.svg" alt="">
+                        <span class="textForImg lng-apartments">Недвижимость</span>
+                        <input hidden value="Недвижимость" name="category">
+                    </button>
+                </form>
+                <form action="/{{lang}}" method="post" class="category">
+                    <button type="submit">
+                        <img class="categoryImage" src="img/transport.svg" alt="">
+                        <span class="textForImg lng-transport">Транспорт</span>
+                        <input hidden value="Транспорт" name="category">
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </categories>
+
+<!-- End Categories -->
+
+<!-- products -->
+
+    <main>
+
+        <div class="mt-2" style="width:80%">
+            <h1 class="fs-2">Все объявления</h1>
+        </div>
+
+        <div class="innerMain d-flex justify-content-center flex-wrap">
+
+            <div class="product">
+
+                <img class = "product-image" src="./img/alieneatingpizza.jpg" alt="photo">
+                <div class="product-date">
+                    01/20/2023 04:30
+                </div>
+                <div class="product-name">
+                    UFO with an awesome Pizza!
+                </div>
+                <div class="product-category">
+                    Личные вещи
+                </div>
+                <div class="product-price">
+                    ₸ 124816
+                </div>
+                <div class="sell-type">цена</div>
+
+            </div>
+            
+            <div class="product">
+                
+                <img class = "product-image" src="./img/alieneatingpizza.jpg" alt="photo">
+                <div class="product-date">
+                    01/20/2023 04:30
+                </div>
+                <div class="product-name">
+                    UFO with an awesome Pizza!
+                </div>
+                <div class="product-category">
+                    Личные вещи
+                </div>
+                <div class="product-price">
+                    ₸ 124816
+                </div>
+                <div class="sell-type">цена</div>
+
+            </div>
+
+            <div class="product">
+                
+                <img class = "product-image" src="./img/alieneatingpizza.jpg" alt="photo">
+                <div class="product-date">
+                    01/20/2023 04:30
+                </div>
+                <div class="product-name">
+                    UFO with an awesome Pizza!
+                </div>
+                <div class="product-category">
+                    Личные вещи
+                </div>
+                <div class="product-price">
+                    ₸ 124816
+                </div>
+                <div class="sell-type">цена</div>
+
+            </div>
+
+            <div class="product">
+                
+                <img class = "product-image" src="./img/alieneatingpizza.jpg" alt="photo">
+                <div class="product-date">
+                    01/20/2023 04:30
+                </div>
+                <div class="product-name">
+                    UFO with an awesome Pizza!
+                </div>
+                <div class="product-category">
+                    Личные вещи
+                </div>
+                <div class="product-price">
+                    ₸ 124816
+                </div>
+                <div class="sell-type">цена</div>
+
+            </div>
+
+            <div class="product">
+                
+                <img class = "product-image" src="./img/alieneatingpizza.jpg" alt="photo">
+                <div class="product-date">
+                    01/20/2023 04:30
+                </div>
+                <div class="product-name">
+                    UFO with an awesome Pizza!
+                </div>
+                <div class="product-category">
+                    Личные вещи
+                </div>
+                <div class="product-price">
+                    ₸ 124816
+                </div>
+                <div class="sell-type">цена</div>
+
+            </div>
+
+            <div class="product">
+                
+                <img class = "product-image" src="./img/alieneatingpizza.jpg" alt="photo">
+                <div class="product-date">
+                    01/20/2023 04:30
+                </div>
+                <div class="product-name">
+                    UFO with an awesome Pizza!
+                </div>
+                <div class="product-category">
+                    Личные вещи
+                </div>
+                <div class="product-price">
+                    ₸ 124816
+                </div>
+                <div class="sell-type">цена</div>
+
+            </div>
+
+
+
+           
+        </div>
+    </main>
+    <div style="height: 100px;"></div>
+
+<!-- products end -->
+
+    <footer class="bg-dark text-center text-white ">
+        <!-- Grid container -->
+        <div class="container p-4 d-flex">
+         
+        <div class="col-6">
+            <h4 class="text-center">Usharal.kz</h4>
+            <p></p>
+        </div>
+        <div class="col-6">
+            <h4 class="text-center">Контакты</h4>
+            <p></p>
+        </div>
+
+        </div>
+        <!-- Grid container -->
+
+       
+      </footer>
+    
+    <!-- End Categries  -->
+
+    <script src="https://kit.fontawesome.com/06eeb4d8bd.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
