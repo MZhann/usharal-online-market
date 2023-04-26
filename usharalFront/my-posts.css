@@ -1,0 +1,35 @@
+body{
+    background-color: hsl(0,0%,90%);
+}
+
+.pages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.messageText {
+    font-size: 30px;
+    margin: auto 0 0 0;
+    font-weight: bold;
+}
+
+.page{
+    display: flex;
+    justify-content: space-between;
+}
+
+.length{
+    width: 60%;
+}
+
+.text{
+    font-size: 18px;
+}
+
+.active-notactive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}

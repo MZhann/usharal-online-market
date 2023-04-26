@@ -149,8 +149,6 @@ form.category {
   width: 67px;
 }
 
-.category:hover {
-}
 .category button:hover {
   height: 100%;
   background-color: #e5e5e5;
@@ -300,4 +298,10 @@ main{
 
 .product-category{
   height: 3.6vh;
+}
+
+.no-button{
+  outline: none;
+  border: none;
+  background-color: transparent;
 }
