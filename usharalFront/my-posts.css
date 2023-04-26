@@ -2,6 +2,11 @@ body{
     background-color: hsl(0,0%,90%);
 }
 
+.no-button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
 .pages{
     display: flex;
     flex-direction: column;
@@ -33,3 +38,4 @@ body{
     align-items: center;
     /* justify-content: space-evenly; */
 }
+
