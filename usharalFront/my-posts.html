@@ -83,56 +83,203 @@
     <div class="w-100 bg-white pages">
         <div class="length">
             <div class="messageText">Мои обьявления</div>
-            <div class="d-flex page">
-                <div class="text">Сообщения</div>
-                <div class="text">Мои обьявления</div>
-                <div class="text">Платежи и счёт</div>
-                <div class="text">Мой профиль</div>
+            <div class=" page mt-2 flex-wrap">
+                <a href="#" class="links"><div class="text">Сообщения</div></a>
+                <a href="#" class="links"><div class="text" style="color: rgb(255,197,58); border-bottom: 3px solid rgb(255,197,58);">Мои обьявления</div></a>
+                <a href="#" class="links"><div class="text">Платежи и счёт</div></a>
+                <a href="#" class="links"><div class="text">Мой профиль</div></a>
+                
             </div>
         </div>
     </div>
     <!-- Pages ends -->
-    <div class="active-notactive w-100">
-        <div class="d-flex justify-content-between w-25">
-            <div>Активные</div>
-            <div>Не активные</div>
+    <div class="active-notactive w-100 mb-5 mt-2">
+        <div class="two-choice  mb-5">
+            <a class="links">
+                <div class = "choose" style=" border-bottom: 2px solid rgb(255,197,58);  color: rgb(255,197,58)">Активные</div>
+            </a>
+            <a class="links">
+                <div class = "choose" style=" border-bottom: 1px solid black; ">Не активные</div>
+            </a>
+
         </div>
-        <input type="text" class='lng-searchPlaceHolder search-input length ps-4 p-2 rounded border-1 border-secondary' placeholder="Поиск по заголовку" name="" id="">
+        <input type="text" class='lng-searchPlaceHolder search-input length ps-4 p-2 rounded border-1 border-secondary bg-transparent' placeholder="Поиск по заголовку" name="" id="">
 
     </div>
 
     <main class="w-100 active-notactive">
         <div class="posts">
-            <div class="post d-flex">
-                <div></div>
-                <div>
-                    <div class="name">НЛО</div>
-                    <div class="category">Электроника</div>
+
+            <div class="post">
+                <div class="imageBlock" style="background-image: url(./img/alieneatingpizza.jpg)"> </div>
+                <div class="w-100 p-2 ">
+                    <div class="name text-decoration-underline"><b>НЛО</b></div>
+                    <div class="category text-primary text-decoration-underline mb-2">Электроника</div>
                     <div class="d-flex">
-                        <div class="price">₸ 1 234 567</div>
-                        <div>Цена</div>
+                        <div class="product-price mb-3">₸ 1 234 567</div>
+                        <div class="ps-5 text-secondary text-dissapear" >Цена</div>
                     </div>
-                    <div class="d-flex">
-                        <div>Дата добавления - 04/22/2023 10:30</div>
-                        <div>Дата удаления - 05/06/2023 10:30</div>
+                    <div class="d-flex mb-2 dates">
+                        <div class="text-secondary" style="font-size: 14px; margin-right: 40px;"><i class="fa-regular fa-calendar-plus pe-1 " style="color: #6e6e6e;"></i><b>Дата добавления</b> - 04/22/2023 10:30</div>
+                        <div class="text-secondary" style="font-size: 14px;"><i class="fa-regular fa-calendar-minus pe-1" style="color: #6e6e6e;"></i><b>Дата удаления</b> - 05/06/2023 10:30</div>
                     </div>
-                    <div class="d-flex">
+                    <div class="d-flex w-100 justify-content-between pe-5 like-buttons">
                         <div class="d-flex">
-                            <div class="me-2 ms-0"><i class="fa-regular fa-eye p-0" style="color: #6e6e6e;"></i>13</div>
-                            <div class="me-2"><i class="fa-regular fa-heart" style="color: #6e6e6e;"></i>5</div>
-                            <div><i class="fa-regular fa-comment" style="color: #6e6e6e;"></i>2</div>    
+                            <div class="me-2 ms-0"><i class="fa-regular fa-eye p-0 me-1" style="color: #6e6e6e; "></i>13</div>
+                            <div class="me-2"><i class="fa-regular fa-heart me-1" style="color: #6e6e6e;"></i>5</div>
+                            <div><i class="fa-regular fa-comment me-1" style="color: #6e6e6e;"></i>2</div>    
                         </div>
-                        <div class="btn">Редактировать</div>
-                        <div class="btn">Деактивировать</div>
+                        <div class="d-flex somebuttons">
+                            <button class="buttons me-4">Редактировать</button>
+                            <button class="buttons">Деактивировать</button>
+                        </div>
+                        
                     </div>
                     
                 </div>
             </div>
+            <div class="post">
+                <div class="imageBlock" style="background-image: url(./img/alieneatingpizza.jpg)"> </div>
+                <div class="w-100 p-2 ">
+                    <div class="name text-decoration-underline"><b>НЛО</b></div>
+                    <div class="category text-primary text-decoration-underline mb-2">Электроника</div>
+                    <div class="d-flex">
+                        <div class="product-price mb-3">₸ 1 234 567</div>
+                        <div class="ps-5 text-secondary text-dissapear" >Цена</div>
+                    </div>
+                    <div class="d-flex mb-2 dates">
+                        <div class="text-secondary" style="font-size: 14px; margin-right: 40px;"><i class="fa-regular fa-calendar-plus pe-1 " style="color: #6e6e6e;"></i><b>Дата добавления</b> - 04/22/2023 10:30</div>
+                        <div class="text-secondary" style="font-size: 14px;"><i class="fa-regular fa-calendar-minus pe-1" style="color: #6e6e6e;"></i><b>Дата удаления</b> - 05/06/2023 10:30</div>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between pe-5 like-buttons">
+                        <div class="d-flex">
+                            <div class="me-2 ms-0"><i class="fa-regular fa-eye p-0 me-1" style="color: #6e6e6e; "></i>13</div>
+                            <div class="me-2"><i class="fa-regular fa-heart me-1" style="color: #6e6e6e;"></i>5</div>
+                            <div><i class="fa-regular fa-comment me-1" style="color: #6e6e6e;"></i>2</div>    
+                        </div>
+                        <div class="d-flex somebuttons">
+                            <button class="buttons me-4">Редактировать</button>
+                            <button class="buttons">Деактивировать</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="post">
+                <div class="imageBlock" style="background-image: url(./img/alieneatingpizza.jpg)"> </div>
+                <div class="w-100 p-2 ">
+                    <div class="name text-decoration-underline"><b>НЛО</b></div>
+                    <div class="category text-primary text-decoration-underline mb-2">Электроника</div>
+                    <div class="d-flex">
+                        <div class="product-price mb-3">₸ 1 234 567</div>
+                        <div class="ps-5 text-secondary text-dissapear" >Цена</div>
+                    </div>
+                    <div class="d-flex mb-2 dates">
+                        <div class="text-secondary" style="font-size: 14px; margin-right: 40px;"><i class="fa-regular fa-calendar-plus pe-1 " style="color: #6e6e6e;"></i><b>Дата добавления</b> - 04/22/2023 10:30</div>
+                        <div class="text-secondary" style="font-size: 14px;"><i class="fa-regular fa-calendar-minus pe-1" style="color: #6e6e6e;"></i><b>Дата удаления</b> - 05/06/2023 10:30</div>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between pe-5 like-buttons">
+                        <div class="d-flex">
+                            <div class="me-2 ms-0"><i class="fa-regular fa-eye p-0 me-1" style="color: #6e6e6e; "></i>13</div>
+                            <div class="me-2"><i class="fa-regular fa-heart me-1" style="color: #6e6e6e;"></i>5</div>
+                            <div><i class="fa-regular fa-comment me-1" style="color: #6e6e6e;"></i>2</div>    
+                        </div>
+                        <div class="d-flex somebuttons">
+                            <button class="buttons me-4">Редактировать</button>
+                            <button class="buttons">Деактивировать</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="post">
+                <div class="imageBlock" style="background-image: url(./img/alieneatingpizza.jpg)"> </div>
+                <div class="w-100 p-2 ">
+                    <div class="name text-decoration-underline"><b>НЛО</b></div>
+                    <div class="category text-primary text-decoration-underline mb-2">Электроника</div>
+                    <div class="d-flex">
+                        <div class="product-price mb-3">₸ 1 234 567</div>
+                        <div class="ps-5 text-secondary text-dissapear" >Цена</div>
+                    </div>
+                    <div class="d-flex mb-2 dates">
+                        <div class="text-secondary" style="font-size: 14px; margin-right: 40px;"><i class="fa-regular fa-calendar-plus pe-1 " style="color: #6e6e6e;"></i><b>Дата добавления</b> - 04/22/2023 10:30</div>
+                        <div class="text-secondary" style="font-size: 14px;"><i class="fa-regular fa-calendar-minus pe-1" style="color: #6e6e6e;"></i><b>Дата удаления</b> - 05/06/2023 10:30</div>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between pe-5 like-buttons">
+                        <div class="d-flex">
+                            <div class="me-2 ms-0"><i class="fa-regular fa-eye p-0 me-1" style="color: #6e6e6e; "></i>13</div>
+                            <div class="me-2"><i class="fa-regular fa-heart me-1" style="color: #6e6e6e;"></i>5</div>
+                            <div><i class="fa-regular fa-comment me-1" style="color: #6e6e6e;"></i>2</div>    
+                        </div>
+                        <div class="d-flex somebuttons">
+                            <button class="buttons me-4">Редактировать</button>
+                            <button class="buttons">Деактивировать</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="post">
+                <div class="imageBlock" style="background-image: url(./img/alieneatingpizza.jpg)"> </div>
+                <div class="w-100 p-2 ">
+                    <div class="name text-decoration-underline"><b>НЛО</b></div>
+                    <div class="category text-primary text-decoration-underline mb-2">Электроника</div>
+                    <div class="d-flex">
+                        <div class="product-price mb-3">₸ 1 234 567</div>
+                        <div class="ps-5 text-secondary text-dissapear" >Цена</div>
+                    </div>
+                    <div class="d-flex mb-2 dates">
+                        <div class="text-secondary" style="font-size: 14px; margin-right: 40px;"><i class="fa-regular fa-calendar-plus pe-1 " style="color: #6e6e6e;"></i><b>Дата добавления</b> - 04/22/2023 10:30</div>
+                        <div class="text-secondary" style="font-size: 14px;"><i class="fa-regular fa-calendar-minus pe-1" style="color: #6e6e6e;"></i><b>Дата удаления</b> - 05/06/2023 10:30</div>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between pe-5 like-buttons">
+                        <div class="d-flex">
+                            <div class="me-2 ms-0"><i class="fa-regular fa-eye p-0 me-1" style="color: #6e6e6e; "></i>13</div>
+                            <div class="me-2"><i class="fa-regular fa-heart me-1" style="color: #6e6e6e;"></i>5</div>
+                            <div><i class="fa-regular fa-comment me-1" style="color: #6e6e6e;"></i>2</div>    
+                        </div>
+                        <div class="d-flex somebuttons">
+                            <button class="buttons me-4">Редактировать</button>
+                            <button class="buttons">Деактивировать</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- <div class="post d-flex w-100">
+                <div class="imageBlock w-25" style="background-image: url(./img/alieneatingpizza.jpg)"> </div>
+                <div class="w-100 p-2">
+                    <div class="name text-decoration-underline"><b>НЛО</b></div>
+                    <div class="category text-primary text-decoration-underline mb-2">Электроника</div>
+                    <div class="d-flex">
+                        <div class="product-price mb-3">₸ 1 234 567</div>
+                        <div class="ps-5 text-secondary" style="display: flex; justify-content: center; align-items: center;">Цена</div>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <div class="text-secondary" style="font-size: 14px; margin-right: 40px;"><i class="fa-regular fa-calendar-plus pe-1 " style="color: #6e6e6e;"></i><b>Дата добавления</b> - 04/22/2023 10:30</div>
+                        <div class="text-secondary" style="font-size: 14px;"><i class="fa-regular fa-calendar-minus pe-1" style="color: #6e6e6e;"></i><b>Дата удаления</b> - 05/06/2023 10:30</div>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between pe-5">
+                        <div class="d-flex">
+                            <div class="me-2 ms-0"><i class="fa-regular fa-eye p-0 me-1" style="color: #6e6e6e; "></i>13</div>
+                            <div class="me-2"><i class="fa-regular fa-heart me-1" style="color: #6e6e6e;"></i>5</div>
+                            <div><i class="fa-regular fa-comment me-1" style="color: #6e6e6e;"></i>2</div>    
+                        </div>
+                        <div class="buttons">Редактировать</div>
+                        <div class="buttons">Деактивировать</div>
+                    </div>
+                    
+                </div>
+            </div> -->
         </div>
     </main>
+    <div style="height: 300px;"></div>
 
-
-    <footer class="bg-dark text-center text-white"> 
+    <footer class="bg-dark text-center text-white "> 
         <!-- Grid container -->
         <div class="container p-4 d-flex">
          
