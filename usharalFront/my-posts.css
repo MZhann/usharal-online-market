@@ -1,3 +1,5 @@
+/* Снизу есть @media для того, чтобы подбирать адаптивность вручную */
+
 body{
     background-color: hsl(0,0%,90%);
 }
@@ -73,7 +75,7 @@ body{
 }
 
 .post{
-    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    width: 100%;
     display: flex;
     background-color: white;
     border-radius: 15px;
@@ -214,7 +216,6 @@ body{
 
 @media only screen and (max-width:480px) {
     .choose{
-        width: 180px;
         padding: 10px 15px;
 
     }

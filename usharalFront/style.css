@@ -174,93 +174,6 @@ main{
   align-items: center;
   margin-top: 2px;
 }
-/* 
-.areaForText {
-  display: flex;
-  align-items: center;
-}
-
-.mainText {
-  font-size: 30px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-}
-
-.adverLine .contentBox,
-.mainPart .contentBox {
-  margin-top: 30px !important;
-  min-width: 200px !important;
-  margin: auto;
-}
-
-.adverLine {
-  width: 80%;
-  display: grid !important;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  min-height: 690px;
-  overflow: hidden;
-
-  z-index: 1;
-  margin: 0 auto;
-}
-
-.adverLine,
-.mainPart {
-  width: 100%;
-  height: 680px;
-  overflow: hidden;
-  display: grid !important;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1.6fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-
-.contentBox:hover {
-  transform: scale(1.04);
-}
-
-.contentBox .shortInfo {
-  
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.contentBox .shortInfo {
-
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.buttonLine button {
-  width: auto;
-
-  
-}
-.buttonLine {
-  width: 100%;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.buttonLine button {
-  margin: 20px;
-  padding: 8px 35px;
-
-  background-color: #ffc53a;
-  border: 2px solid #ffc53a;
-  border-radius: 10px;
-  color: #ffffff !important;
-  font-size: 18px;
-}
-*/
 .product{
   
   width: 200px;
@@ -279,7 +192,6 @@ main{
 
 /* .info-block */
 .product-price{
-  /* vertical-align:middle; */
   font-size: 20px;
   height: 3.4vh;
   font-weight: bold;
@@ -304,4 +216,19 @@ main{
   outline: none;
   border: none;
   background-color: transparent;
+}
+
+
+
+@media only screen and (max-width:768px) {
+  .product-image{
+ 
+    width: 150px;
+    height: 151px;
+  }
+  .product{
+    width: 150px;
+    height: 290px;
+    margin: 0px;
+  }
 }

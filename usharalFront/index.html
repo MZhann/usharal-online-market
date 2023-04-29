@@ -12,8 +12,8 @@
 <body>
     
 <!-- Navbar -->
-
-    <header id="header" class="bg-dark ">
+    <div style="height: 55px;"></div>
+    <header id="header" class="bg-dark fixed-top">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
                 <a href="./index.html" class="navbar-brand">usharal.kz</a>
@@ -33,13 +33,11 @@
                         
                         <li class="nav-item">
                             <div class="d-flex">
-                                <a href="#" class="nav-link m-0 p-0 pt-2 pe-1">
-                                    <i class="fa-regular fa-user"></i>
-                                </a>
+                              
                                 
                                 <div class="dropdown p-0 m-0">
                                     <button type="button" class="no-button nav-link pt-2 m-0" data-bs-toggle="dropdown">
-                                      Личный кабинет
+                                        <i class="fa-regular fa-user" style="margin-right: 3px;"></i> Личный кабинет <i class="fa-solid fa-chevron-down" style="color: #6e6e6e; "></i>
                                     </button>
                                     <ul class="dropdown-menu" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                                       <li><a class="dropdown-item" href="#">Сообщения</a></li>
@@ -61,11 +59,10 @@
                         <li class="nav-item">
                             <a href="#" class="nav-link"><i class="fa-regular fa-comment"></i>&nbsp;Сообщения</a>
                         </li>
-
-                        <form action="#" class="d-flex">
                         
+                       
+                        <form action="./new-post.html" class="d-flex">
                             <button class="btn btn-outline-warning">Подать обьявление</button>
-    
                         </form> 
                         
                         <li class="nav-item">
@@ -204,7 +201,7 @@
             <h1 class="fs-2">Все объявления</h1>
         </div>
 
-        <div class="innerMain d-flex justify-content-around flex-wrap">
+        <div class="innerMain d-flex justify-content-center flex-wrap">
 
             
             <div class="product m-2 mb-4">
