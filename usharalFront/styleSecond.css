@@ -19,7 +19,11 @@ body{
       border-right: 1px solid !important; */
     cursor: pointer;
   }
-
+  .no-button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
 .wholeList-content,
 .location-content {
   display: block;
@@ -282,10 +286,10 @@ main{
 
 /* .info-block */
 .product-price{
-  /* vertical-align:middle; */
   font-size: 20px;
-  height: 3.4vh;
+  height: 15px;
   font-weight: bold;
+  margin-top: 20px;
 }
 
 .product-date{
@@ -295,12 +299,16 @@ main{
 
 .product-name{
   font-size: 17px;
-  height: 3vh;
+  height: 10px;
   color: rgb(65, 65, 244);
+}
+.sell-type{
+  margin-top: 15px;
 }
 
 .product-category{
-  height: 3.6vh;
+  margin-top: 10px;
+  height: 10px;
 }
 
 .pages{
@@ -490,3 +498,17 @@ main{
   }
 }
 
+
+
+@media only screen and (max-width:768px) {
+  .product-image{
+ 
+    width: 150px;
+    height: 151px;
+  }
+  .product{
+    width: 150px;
+    height: 290px;
+    margin: 0px;
+  }
+}

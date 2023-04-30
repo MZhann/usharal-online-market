@@ -7,11 +7,12 @@
     <title>úsharal</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./my-posts.css">
+    <link rel="stylesheet" href="styleI.css">
 </head>
 <body>
 <!-- Navbar -->
 
-<header id="header" class="bg-dark ">
+<header id="header" class="bg-dark fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a href="./index.html" class="navbar-brand">usharal.kz</a>
@@ -31,19 +32,17 @@
                     
                     <li class="nav-item">
                         <div class="d-flex">
-                            <a href="#" class="nav-link m-0 p-0 pt-2 pe-1">
-                                <i class="fa-regular fa-user"></i>
-                            </a>
+                          
                             
                             <div class="dropdown p-0 m-0">
                                 <button type="button" class="no-button nav-link pt-2 m-0" data-bs-toggle="dropdown">
-                                  Личный кабинет
+                                    <i class="fa-regular fa-user" style="margin-right: 3px;"></i> Личный кабинет <i class="fa-solid fa-chevron-down" style="color: #6e6e6e; "></i>
                                 </button>
                                 <ul class="dropdown-menu" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
-                                  <li><a class="dropdown-item" href="#">Сообщения</a></li>
+                                  <li><a class="dropdown-item" href="./messages.html">Сообщения</a></li>
                                   <li><a class="dropdown-item" href="./my-posts.html">Мои объявления</a></li>
-                                  <li><a class="dropdown-item" href="#">Платежи и счет</a></li>
-                                  <li><a class="dropdown-item" href="./my-posts.html">Мой профиль</a></li>
+                                  <li><a class="dropdown-item" href="./transaction.html">Платежи и счет</a></li>
+                                  <li><a class="dropdown-item" href="./profile.html">Мой профиль</a></li>
                                   <li><hr class="dropdown-divider"></li>
                                   <li><a class="dropdown-item" href="#">Выйти</a></li>
                                 </ul>
@@ -53,17 +52,16 @@
                     
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><i class=" fa-regular fa-heart"></i>&nbsp;Избранное</a>
+                        <a href="./izbrannoe.html" class="nav-link"><i class=" fa-regular fa-heart"></i>&nbsp;Избранное</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="fa-regular fa-comment"></i>&nbsp;Сообщения</a>
+                        <a href="./messages.html" class="nav-link"><i class="fa-regular fa-comment"></i>&nbsp;Сообщения</a>
                     </li>
-
-                    <form action="./new-post.html" class="d-flex">
                     
+                   
+                    <form action="./new-post.html" class="d-flex">
                         <button class="btn btn-outline-warning">Подать обьявление</button>
-
                     </form> 
                     
                     <li class="nav-item">
@@ -77,17 +75,17 @@
         </div>
     </nav>
 </header>
-
+    <div style="height: 55px;"></div>
     <!-- Navbar ends -->
     <!-- Pages -->
     <div class="w-100 bg-white pages">
         <div class="length">
             <div class="messageText">Мои обьявления</div>
             <div class=" page mt-2 flex-wrap">
-                <a href="#" class="links"><div class="text">Сообщения</div></a>
-                <a href="#" class="links"><div class="text" style="color: rgb(255,197,58); border-bottom: 3px solid rgb(255,197,58);">Мои обьявления</div></a>
-                <a href="#" class="links"><div class="text">Платежи и счёт</div></a>
-                <a href="#" class="links"><div class="text">Мой профиль</div></a>
+                <a href="./messages.html" class="links"><div class="text">Сообщения</div></a>
+                <a href="./my-posts.html" class="links"><div class="text" style="color: rgb(255,197,58); border-bottom: 3px solid rgb(255,197,58);">Мои обьявления</div></a>
+                <a href="./transaction.html" class="links"><div class="text">Платежи и счёт</div></a>
+                <a href="./profile.html" class="links"><div class="text">Мой профиль</div></a>
                 
             </div>
         </div>
@@ -255,17 +253,18 @@
     </main>
     <div style="height: 300px;"></div>
 
-    <footer class="bg-dark text-center text-white "> 
+    <footer class="bg-dark text-center text-white ">
         <!-- Grid container -->
         <div class="container p-4 d-flex">
          
-        <div class="col-6">
-            <h4 class="text-center">Usharal.kz</h4>
-            <p></p>
+        <div class="col-md-6 col-xs-12">
+            <h4 class="textF text-center text-warning">Usharal.kz</h4>
+            <p>@ 2022 usharal.kz - все права защищены</p>
         </div>
-        <div class="col-6">
-            <h4 class="text-center">Контакты</h4>
-            <p></p>
+        <div class="col-md-6 col-xs-12">
+            <h4 class="textF text-center text-warning">Контакты</h4>
+            <p>usharal_kz@gmail.com</p>
+            <p>+7(705) 332 2343</p>
         </div>
 
         </div>

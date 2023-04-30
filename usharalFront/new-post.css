@@ -72,12 +72,12 @@
 
 .btn {
     white-space: nowrap;
-    height: 40px;
+    /* height: 40px;
     width: 100px;
     background-color: transparent;
     border: 2px solid #ffc53a ;
     border-radius: 10px;
-    color: dark;
+    color: dark; */
  
   }
 

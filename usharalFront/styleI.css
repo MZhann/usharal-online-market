@@ -12,7 +12,11 @@
   
     padding: 20px;
   }
-
+  .no-button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
 .innerMain {
     width: 90%;
 }
@@ -58,10 +62,7 @@
     margin-top: 5px;
 }
 
-.writeWhats {
-    margin-top: 30px;
-    border: 3px solid #ffc53a;
-}
+
 .cost {
     color: #2f323a;
     font-size: 1.8rem;
@@ -116,12 +117,12 @@
     border-radius: 10px;
     padding: 20px;
     display: block;
+    box-shadow: 4px 4px 18px 4px rgba(34, 60, 80, 0.2);
 }
 
 .MsgAndAdvice {
     margin-top: 15px;
     height: auto;
-    width: 100%;
 }
 
 .MsgAndAdvice .sendMsg {
@@ -253,21 +254,35 @@
 }
 
 .sendToUser {
-    width: 40%;
-    font-size: 1rem;
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
     background-color: #ffc53a;
     color: #fff;
     border: none;
-    padding: 3px 10px;
-    margin: auto;
+    padding: 0px 0px;
+    margin: 0;
     border-radius: 7px;
 }
 
+.writeWhats{
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    color: black;
+    /* border: none; */
+    padding: 0px 0px;
+    margin: 0;
+    border-radius: 7px;
+}
+
+
 .sendToUserWhats {
-    width: 40%;
-    font-size: 1rem;
-    background-color: #fff;
-    border: 2px solid #ffc53a;
+    margin-top: 30px;
+    border: 3px solid #ffc53a;
+    /* white-space: nowrap; */
+    width: 50%;
+    font-size: 16px;
     text-align: center;
     margin: auto;
     border-radius: 7px;
@@ -445,6 +460,27 @@ button:hover {
     flex-direction: column;
     margin-bottom: 20px;
 }
+
+@media only screen and (max-width:672px) {
+  
+.sendToUserWhats {
+    /* margin-top: 30px; */
+    /* border: 3px solid #ffc53a; */
+    /* white-space: nowrap; */
+    width: 80%;
+    /* font-size: 16px; */
+    /* text-align: center; */
+    /* margin: auto; */
+    /* border-radius: 7px; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-decoration: none; */
+    /* color: black; */
+}
+
+  }
+  
 
 @media only screen and (max-width:500px) {
     .changeProfile {

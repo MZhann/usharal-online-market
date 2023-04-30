@@ -12,60 +12,75 @@
 <body>
 <!-- Navbar -->
 
-    <header id="header" class="bg-dark ">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-                <a href="./index.html" class="navbar-brand">usharal.kz</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target = "#navContent"
-                aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navContent">
-                    <ul class="navbar-nav mb-3 mb-lg-0 w-100 d-flex justify-content-between">
-                        <li class="nav-item">
-                            <div class="d-flex">
-                                <a href="#" class="nav-link">рус&nbsp; |</a>
-                                <!-- <p class="text-light mb-0">|</p> -->
-                                <a href="#" class="nav-link p-0 pt-2">қаз</a>
+<header id="header" class="bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a href="./index.html" class="navbar-brand">usharal.kz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target = "#navContent"
+            aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav mb-3 mb-lg-0 w-100 d-flex justify-content-between">
+                    <li class="nav-item">
+                        <div class="d-flex">
+                            <a href="#" class="nav-link">рус&nbsp; |</a>
+                            <!-- <p class="text-light mb-0">|</p> -->
+                            <a href="#" class="nav-link p-0 pt-2">қаз</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <div class="d-flex">
+                          
+                            
+                            <div class="dropdown p-0 m-0">
+                                <button type="button" class="no-button nav-link pt-2 m-0" data-bs-toggle="dropdown">
+                                    <i class="fa-regular fa-user" style="margin-right: 3px;"></i> Личный кабинет <i class="fa-solid fa-chevron-down" style="color: #6e6e6e; "></i>
+                                </button>
+                                <ul class="dropdown-menu" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                                  <li><a class="dropdown-item" href="./messages.html">Сообщения</a></li>
+                                  <li><a class="dropdown-item" href="./my-posts.html">Мои объявления</a></li>
+                                  <li><a class="dropdown-item" href="./transaction.html">Платежи и счет</a></li>
+                                  <li><a class="dropdown-item" href="./profile.html">Мой профиль</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="#">Выйти</a></li>
+                                </ul>
                             </div>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a href="#" class="nav-link"><i class="fa-regular fa-user "></i>&nbsp;Личный кабинет
-                            <i class="fas arrow fa-angle-down"></i></a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="#" class="nav-link"><i class=" fa-regular fa-heart"></i>&nbsp;Избранное</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="#" class="nav-link"><i class="fa-regular fa-comment"></i>&nbsp;Сообщения</a>
-                        </li>
-
-                        <form action="#" class="d-flex">
-                        
-                            <button class="btn btn-outline-warning">Подать обьявление</button>
-    
-                        </form> 
-                        
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">&nbsp;Log in</a>
-                        </li>
-                    </ul>
+                        </div>                         
+                    </li>
                     
+
+                    <li class="nav-item">
+                        <a href="./izbrannoe.html" class="nav-link"><i class=" fa-regular fa-heart"></i>&nbsp;Избранное</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./messages.html" class="nav-link"><i class="fa-regular fa-comment"></i>&nbsp;Сообщения</a>
+                    </li>
                     
+                   
+                    <form action="./new-post.html" class="d-flex">
+                        <button class="btn btn-outline-warning">Подать обьявление</button>
+                    </form> 
                     
-                </div>
+                    <li class="nav-item">
+                        <a href="./registration-login.html" class="nav-link">&nbsp;Log in</a>
+                    </li>
+                </ul>
+                
+                
+                
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
 
 <!-- Navbar ends -->
 
 <!-- Search -->
 
-  
+  <div style="margin-top: 80px;"></div>
 
 <!-- End search -->
 
@@ -128,7 +143,7 @@
                         
                         <div class="data" style="display: flex; flex-direction: column; justify-content: center;">
                             <div class="name">Досжан Рахметов</div>
-                            <div class="mobNum" style="">
+                            <div class="mobNum" >
                                 <span>+7 (777) 227-00-88</span>
                             </div>
                         </div>
@@ -203,7 +218,7 @@
             </div>
 
 
-            <div class="MsgAndAdvice row d-flex justify-content-around">
+            <div class="MsgAndAdvice row d-flex justify-content-between">
                 <div class="sendMsg col-md-7 col-xs-12">
                     <div class="firstL">
                         <div class="miniProfile" style=" align-items: center;">

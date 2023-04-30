@@ -193,8 +193,9 @@ main{
 /* .info-block */
 .product-price{
   font-size: 20px;
-  height: 3.4vh;
+  height: 15px;
   font-weight: bold;
+  margin-top: 20px;
 }
 
 .product-date{
@@ -204,12 +205,17 @@ main{
 
 .product-name{
   font-size: 17px;
-  height: 3vh;
+  height: 10px;
   color: rgb(65, 65, 244);
 }
 
 .product-category{
-  height: 3.6vh;
+  margin-top: 10px;
+  height: 10px;
+}
+
+.sell-type{
+  margin-top: 15px;
 }
 
 .no-button{
