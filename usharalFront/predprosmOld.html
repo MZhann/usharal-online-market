@@ -7,12 +7,12 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./styleSecond.css">
-    <link rel="stylesheet" href="styleI.css">
+    <link rel="stylesheet" href="styleIOld.css">
 </head>
 <body>
 <!-- Navbar -->
 
-<header id="header" class="backgroundNavbar fixed-top">
+<header id="header" class="bg-dark fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a href="./index.html" class="navbar-brand">usharal.kz</a>
@@ -80,7 +80,7 @@
 
 <!-- Search -->
 
-  
+  <div style="margin-top: 80px;"></div>
 
 <!-- End search -->
 
@@ -143,7 +143,7 @@
                         
                         <div class="data" style="display: flex; flex-direction: column; justify-content: center;">
                             <div class="name">Досжан Рахметов</div>
-                            <div class="mobNum">
+                            <div class="mobNum" >
                                 <span>+7 (777) 227-00-88</span>
                             </div>
                         </div>
@@ -151,11 +151,8 @@
                     <div class="quickChat">
                       
                     </div>
-                    <div class="buttonsBlock w-50 d-flex justify-content-end mt-3 ms-3">
-                        <div class="d-flex twoButtonsBlock">
-                            <button class="btn btn-outline-warning twobuttons " style="background-color:  #18ab29; color: white; white-space: nowrap;">Написать продавцу</button>   
-                        </div>
-                
+                    <div class="writeWhats">
+                        <a href="https://wa.me/77772270088" class="lng-writeWhats">Написать на WhatsApp</a>
                     </div>
 
                 </div>
@@ -226,7 +223,7 @@
                     <div class="firstL">
                         <div class="miniProfile" style=" align-items: center;">
                             
-                            <img src="img/alieneatingpizza.jpg" style="width: 57px;">
+                            <img src="img/alieneatingpizza.jpg" style="width: 57px; border-radius: 50%;">
                             
                             <div class="data" style=" display: flex; flex-direction: column ;">
                                 <div class="name" style="margin: auto;  display: flex; align-items: center;">
@@ -242,19 +239,15 @@
                     <h1 class="lng-uDev">Написать продавцу (данный раздел на разработке)</h1>
                     <from method="POST" action="">
                         <textarea class="lng-yourMessage " disabled="" name="" id="" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
-                        <div class="lastL row d-flex justify-content-between mt-2">
-                            <div class="col-md-6 col-xs-6"><p class="text-center"><a href="#" class="myButton1" style="white-space: nowrap;">Написать продавцу</a></p></div>
-                            <div class="col-md-6 col-xs-6"><p class="text-center"><a href="https://wa.me/77772270088" class="myButton" style="white-space: nowrap;">Написать на WhatsApp</a></p></div>
-                           
-                            
+                        <div class="lastL">
+                            <button class="sendToUser lng-writeToSeller">Написать продавцу</button>
+                            <a class="sendToUserWhats" href="https://wa.me/77772270088">
+                                <p class="lng-writeWhats">Написать на WhatsApp</p>
+                            </a>
                         </div>
-                            
-                    
-                       
-                        
                     </from>
                 </div>
-                <div class="advice col-md-4 col-xs-12 mt-2">
+                <div class="advice col-md-4 col-xs-12">
                     <h2 class="lng-advices">Советы</h2>
                     <div class="lng-d1">- Если Вы нашли странные ошибки в словах или явно низкую цену, лучше сторониться таких объявлений.</div>
                     <div class="lng-d2">- Старайтесь встречаться лично с продавцом для покупки товара.</div>
@@ -262,14 +255,74 @@
                     <div class="lng-d4">- Никогда не отправляйте предоплату!</div>
                 </div>
             </div>
-            <br>
-          
-            <div class="d-flex twoButtonsBlock">
-                <button class="btn btn-outline-warning twobuttons " style="background-color:  #18ab29; color: white;">Редактировать и опубликовать</button>   
-            </div>
+            <div class="areaForTextSame">
+                <div class="someText">
+                    <span class="mainText lng-related"> Похожие объявления</span>
 
+                </div>
+                <div class="buttonSame">
+                    <button class="fa-solid fa-angle-left prev"></button>
+                    <button class="fa-solid fa-angle-right next"></button>
+                </div>
+            </div>
+            <div class="slider row d-flex justify-content-around">
+
+
+                <div class="card col-xs-12 col-md-3 mt-2">
+                    <img class="card-img-top" alt="Card image cap">
+                    <div class="card-body">
+                        <div class="dataContent" style="text-decoration: none; color:black;">01/20/2023 04:30
+                        </div>
+                      <h5 class="card-title">Card title</h5>
             
+                        <div class="costContent">₸  </div>
+                        <div class="categoryContent lng-personalItems" style="text-decoration: none; color:black;"> Личные вещи</div>
+                        <div class="statusContent">
+                            <span class="lng-free">Отдам даром</span>
+                            <input hidden="" id="text_25" value="25"><span class="fa-regular fa-heart" onclick="fill(this)" id="spanOfHeart_25"></span>
+                        </div>
+                    </div>
+                  </div>
+                        
+                  <div class="card col-xs-12 col-md-3 mt-2">
+                    <img class="card-img-top" alt="Card image cap">
+                    <div class="card-body">
+                        <div class="dataContent" style="text-decoration: none; color:black;">01/20/2023 04:30
+                        </div>
+                      <h5 class="card-title">Card title</h5>
             
+                        <div class="costContent">₸  </div>
+                        <div class="categoryContent lng-personalItems" style="text-decoration: none; color:black;"> Личные вещи</div>
+                        <div class="statusContent">
+                            <span class="lng-free">Отдам даром</span>
+                            <input hidden="" id="text_25" value="25"><span class="fa-regular fa-heart" onclick="fill(this)" id="spanOfHeart_25"></span>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="card col-xs-12 col-md-3 mt-2">
+                    <img class="card-img-top" src="./img/alieneatingpizza.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <div class="dataContent" style="text-decoration: none; color:black;">01/20/2023 04:30
+                        </div>
+                      <h5 class="card-title">Card title</h5>
+            
+                        <div class="costContent">₸  </div>
+                        <div class="categoryContent lng-personalItems" style="text-decoration: none; color:black;"> Личные вещи</div>
+                        <div class="statusContent">
+                            <span class="lng-free">Отдам даром</span>
+                            <input hidden="" id="text_25" value="25"><span class="fa-regular fa-heart" onclick="fill(this)" id="spanOfHeart_25"></span>
+                        </div>
+                    </div>
+                  </div>
+                
+                
+                
+                
+
+                
+                
+            </div>
 
 
            
@@ -279,16 +332,16 @@
 
 <!-- products end -->
 
-<footer class="backgroundNavbar text-center text-white ">
+<footer class="bg-dark text-center text-white ">
     <!-- Grid container -->
-    <div class="container p-4 d-flex">
+    <div class="container p-4 d-flex justify-content-around">
      
-    <div class="col-md-6 col-xs-12">
-        <h4 class="textF text-center">Usharal.kz</h4>
-        <p>@ 2022 usharal.kz - все права защищены</p>
+    <div class="col-md-6 col-xs-12 me-1">
+        <h4 class="textF text-center text-warning">Usharal.kz</h4>
+        <p>@ 2022 usharal.kz - все права<br> защищены</p>
     </div>
-    <div class="col-md-6 col-xs-12">
-        <h4 class="textF text-center">Контакты</h4>
+    <div class="col-md-6 col-xs-12 ms-1">
+        <h4 class="textF text-center text-warning">Контакты</h4>
         <p>usharal_kz@gmail.com</p>
         <p>+7(705) 332 2343</p>
     </div>

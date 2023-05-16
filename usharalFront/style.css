@@ -11,6 +11,10 @@ body{
     align-items: center;
   }
 
+  .backgroundNavbar, footer{
+    background-color: hsl(224,10%,21%) !important; 
+  }
+
 .wholeList-btn {
     background-color: transparent;
     font-size: 1em;
@@ -55,8 +59,8 @@ body{
 .inputArea {
   width: 81%;
   height: 100%;
-  border-right: 1px solid #2f223aa9;
-  border-left: 1px solid #2f223aa9;
+  /* border-right: 1px solid #2f223aa9; */
+  /* border-left: 1px solid #2f223aa9; */
 }
 .inputArea input {
   color: #6d6b6ba6;
@@ -174,8 +178,19 @@ main{
   align-items: center;
   margin-top: 2px;
 }
+
+.innerMain{
+  /* d-flex justify-content-center flex-wrap */
+  display: flex;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  box-sizing:content-box;
+}
+
 .product{
-  
+  /* flex-grow: 1; */
+  /* flex-shrink: 0; */
+  /* flex-basis: 50px; */
   width: 200px;
   height: 310px;
   border-radius: 10px;
@@ -224,7 +239,87 @@ main{
   background-color: transparent;
 }
 
+.profileLink{
+  display: none;
+  color: white;
+}
 
+
+.marginStart{
+  margin-left: 40px !important;
+}
+
+/* .profileNone{
+
+
+} */
+@media only screen and (max-width:3228px) {
+ 
+  .innerMain{
+    /* padding: 0px 80px 0px 0px; */
+    width: 1800px;
+  }
+}
+@media only screen and (max-width:2228px) {
+ 
+  .innerMain{
+    /* padding: 0px 80px 0px 0px; */
+    width: 1089px;
+  }
+}
+
+
+@media only screen and (max-width:1512px) {
+ 
+  .innerMain{
+    /* padding: 0px 80px 0px 0px; */
+    width: 1089px;
+  }
+}
+
+
+
+@media only screen and (max-width:1296px) {
+ 
+  .innerMain{
+    /* padding: 0px 20px 0px 20px; */
+    width: 1089px;
+  }
+}
+
+
+@media only screen and (max-width:1080px) {
+  .innerMain{
+    width: 864px;
+  }
+}
+
+@media only screen and (max-width:991px) {
+  .marginStart{
+    margin-left: 0px !important; 
+  }
+  .marginTop{
+    margin-top: 40px;
+  }
+
+  .abs{
+    position: absolute;
+  }
+
+  .profileLink{
+    display: unset
+  }
+
+  .profileNone{
+    display: none;
+  }
+  
+}
+@media only screen and (max-width:872px) {
+  .innerMain{
+    width: 648px;
+  }
+}
 
 @media only screen and (max-width:768px) {
   .product-image{
@@ -237,4 +332,29 @@ main{
     height: 290px;
     margin: 0px;
   }
+  .innerMain{
+    width: 664px;
+  }
+}
+
+@media only screen and (max-width:675px) {
+
+  .innerMain{
+    width: 498px;
+  }
+}
+
+@media only screen and (max-width:510px) {
+
+  .innerMain{
+    width: 332px;
+  }
+}
+
+
+
+@media only screen and (max-width:483px) {
+ .searchBtn{
+  width: 50px;
+ }
 }

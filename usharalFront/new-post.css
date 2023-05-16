@@ -53,12 +53,24 @@
     display: flex; 
     justify-content: center; 
     align-items: end;
+    white-space: nowrap;
 }
-
+::-webkit-file-upload-button {
+    display: none;
+ }
+ 
 .gallery{
     width: 70%;
     display: flex;
     flex-wrap: wrap;
+}
+
+.displayNone{
+  display: none;
+}
+
+.displayUnset{
+  display: unset;
 }
 
 .photo{
@@ -68,6 +80,15 @@
     background-image: url(./img/nophoto.png);
     background-position: center;
     background-size: cover;
+    border-radius: 10px;
+}
+
+.photoChoosen{
+  height: 150px;
+  width: 150px;
+  /* background-image: url(./img/alieneatingpizza.jpg); */
+  background-size: cover;
+
 }
 
 .btn {
@@ -79,6 +100,23 @@
     border-radius: 10px;
     color: dark; */
  
+  }
+
+  .btnClear {
+    white-space: nowrap;
+    height: 40px;
+    width: 100px;
+    background-color: transparent;
+    border: 3px solid #ffc53a ;
+    border-radius: 10px;
+    color: dark;
+    transition: 0.2s;
+    margin-left: 5px;
+  }
+
+  .btnClear:hover{
+    background-color: #ffc53a;
+    color: white;
   }
 
   .text-area{
@@ -112,6 +150,84 @@
     border-radius: 5px;
     width: 60%;
   }
+
+  .bigBoxForImages {
+    margin-top: 20px;
+    width: 60%;
+    height: 14em;
+  }
+ 
+  .containerForAllImages {
+    /* height: 100%; */
+    /* display: grid; */
+    width: 100%;
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* grid-template-rows: repeat(2, 1fr); */
+    /* grid-column-gap: 10px; */
+    /* grid-row-gap: 10px; */
+  }
+  .containerForAllImages div {
+    /* border: none; */
+    border-radius: 10px;
+    /* background-color: #f3f3f3; */
+    display: flex;
+    /* overflow: hidden; */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imageBox {
+    position: relative;
+    border: 2px solid lightgray;
+  }
+
+  .advice {
+    height: 65%;
+    /* height: auto !important; */
+    background-color: #ffe8e8;
+    border-radius: 10px;
+    box-shadow: 4px 4px 18px 4px rgba(34, 60, 80, 0.2);
+    padding: 10px 15px;
+    border: 1px solid #2f223a5d;
+  }
+
+  .imageOfUserChoose {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .imageOfUser {
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .backColor.active {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block !important;
+    z-index: 0.5;
+    background-color: black !important;
+    opacity: 0.4;
+  }
+  .backColor {
+    display: none;
+  }
+  .file {
+    width: 100%;
+    height: 100%;
+    /* width: ;
+      height: 100%;
+      background-color: #2F223aa9;
+      */
+    z-index: 1;
+    opacity: 0;
+  }
+
+
 
 @media only screen and (max-width:1400px) {
     .gallery{
@@ -166,7 +282,8 @@
     white-space: pre-wrap;
    }
    .main-form{
-        width: 80%;
+        width: 95%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;    
     }
 
 }

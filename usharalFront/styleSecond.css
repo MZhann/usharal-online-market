@@ -402,15 +402,7 @@ main{
 
 
 
-@media only screen and (max-width:992px) {
-  .page{
-      /* display: none; */
-      width: 100%;
-  }
-.length{
-      width: 90%;
-  }
-}
+
 
 .searchPayment {
     margin-top: 20px;
@@ -477,11 +469,6 @@ main{
   width: 50%;
   /* d-flex justify-content-between w-50 */
 }
-@media only screen and (max-width:768px) {
-  .two-choice{
-      width: 80%;
-  }
-}
 
 .choose{
   display: flex;
@@ -491,16 +478,93 @@ main{
   font-size: 15px; font-weight: 600;
   white-space: nowrap;
 }
-@media only screen and (max-width:480px) {
-  .choose{
-      padding: 10px 15px;
+.innerMain{
+  /* d-flex justify-content-center flex-wrap */
+  display: flex;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  box-sizing:content-box;
+}
+.innerMainn{
+  width: 90%;
+  /* d-flex justify-content-center flex-wrap */
+  display: flex;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  box-sizing:content-box;
+}
 
+.inputNew{
+  width: 80%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f3f3f3;
+  outline: none;
+  border: 1px solid #b1b0b0;
+  border-radius: 2px;
+}
+
+@media only screen and (max-width:3228px) {
+ 
+  .innerMain{
+    /* padding: 0px 80px 0px 0px; */
+    width: 1800px;
+  }
+}
+@media only screen and (max-width:2228px) {
+ 
+  .innerMain{
+    /* padding: 0px 80px 0px 0px; */
+    width: 1089px;
+  }
+}
+
+
+@media only screen and (max-width:1512px) {
+ 
+  .innerMain{
+    /* padding: 0px 80px 0px 0px; */
+    width: 1089px;
   }
 }
 
 
 
+@media only screen and (max-width:1296px) {
+ 
+  .innerMain{
+    /* padding: 0px 20px 0px 20px; */
+    width: 1089px;
+  }
+}
+
+
+@media only screen and (max-width:1080px) {
+  .innerMain{
+    width: 864px;
+  }
+}
+@media only screen and (max-width:992px) {
+  .page{
+      /* display: none; */
+      width: 100%;
+  }
+.length{
+      width: 90%;
+  }
+}
+@media only screen and (max-width:872px) {
+  .innerMain{
+    width: 648px;
+  }
+}
+
 @media only screen and (max-width:768px) {
+  .two-choice{
+    width: 80%;
+}
   .product-image{
  
     width: 150px;
@@ -511,4 +575,37 @@ main{
     height: 290px;
     margin: 0px;
   }
+  .innerMain{
+    width: 664px;
+  }
 }
+
+
+@media only screen and (max-width:675px) {
+
+  .innerMain{
+    width: 498px;
+  }
+}
+@media only screen and (max-width:510px) {
+
+  .innerMain{
+    width: 332px;
+  }
+}
+
+
+@media only screen and (max-width:480px) {
+  .choose{
+      padding: 10px 15px;
+
+  }
+}
+
+
+
+
+
+
+
+

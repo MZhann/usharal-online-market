@@ -115,6 +115,10 @@ body{
 
 }
 
+.somebuttons{
+    display: flex;
+}
+
 .like-buttons{
 
 }
@@ -131,6 +135,59 @@ body{
     width: 50%;
     /* d-flex justify-content-between w-50 */
 }
+
+/* .posts a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+.tagA{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 80%; */
+}
+
+.mainImageBlock{}
+
+.productTextBlock{
+    width: 80%;
+}
+
+
+/*  
+
+ul {
+    margin: 0 auto;                 
+    width: 1200px;
+    padding-left: 0;                 
+    font-size: 0;                    
+                                        
+}
+
+li {
+  
+    display: inline-block;
+    font-size: 18px;                 
+    list-style-type: none;
+    width: 205px;
+    height: 430px;
+    line-height: 50px;
+    margin: 15px 25px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+@media screen and (max-width: 430px) { ul { width: 200px; } }
+@media screen and (min-width: 431px) and (max-width: 630px) { ul { width: 400px; } }
+@media screen and (min-width: 631px) and (max-width: 830px) { ul { width:600px;  } }
+@media screen and (min-width: 831px) and (max-width: 1030px) { ul { width: 800px; } }
+@media screen and (min-width: 1031px) and (max-width: 1230px) { ul { width: 1000px; } }
+
+
+*/
 
 
 
@@ -166,6 +223,7 @@ body{
         margin: 15px 5px;
         flex-direction: column;
         width: 205px;
+        height: autp;
     }
     .adaptive-text-block{
         width: 100px;
@@ -199,13 +257,23 @@ body{
         
     }
     .posts{
-        width: 100%;
+        width: 860px;
+        /* box-sizing:content; */
         display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+        justify-content: flex-start;
+        flex-wrap:wrap;
+        /* margin: 0 auto; */
     }
     
     
+}
+
+@media only screen and (max-width:873px) {
+    .posts{
+        width: 645px;
+        /* box-sizing:content; */
+       
+    }
 }
 
 @media only screen and (max-width:768px) {
@@ -213,7 +281,13 @@ body{
         width: 80%;
     }
 }
-
+@media only screen and (max-width:672px) {
+    .posts{
+        width: 430px;
+        
+       
+    }
+}
 @media only screen and (max-width:480px) {
     .choose{
         padding: 10px 15px;
@@ -221,6 +295,43 @@ body{
     }
 }
 
-@media only screen and (max-width:320px) {
+@media only screen and (max-width:430px) {
+    .posts{
+        width: 100%;
+        justify-content: center;
+    }
+    .somebuttons{
+        flex-direction: column;
+    }
     
+    .post{
+        width: 90%;
+    }
+    
+    .tagA{
+        width: 80%;
+    }
+    .mainImageBlock{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    .imageBlock{
+        margin-top: 10px;
+        width: 90%;
+        height: 250px;
+        border-radius: 10px;
+    }
+    .productTextBlock{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+   
+    /* .post{
+        justify-content: center;
+    } */
+   
 }

@@ -151,11 +151,8 @@
                     <div class="quickChat">
                       
                     </div>
-                    <div class="buttonsBlock w-50 d-flex justify-content-end mt-3 ms-3">
-                        <div class="d-flex twoButtonsBlock">
-                            <button class="btn btn-outline-warning twobuttons " style="background-color:  #18ab29; color: white; white-space: nowrap;">Написать продавцу</button>   
-                        </div>
-                
+                    <div class="writeWhats" style="display: flex; justify-content: center; align-items: center;">
+                        <a href="https://wa.me/77772270088" class="lng-writeWhats">Написать на WhatsApp</a>
                     </div>
 
                 </div>
@@ -242,16 +239,12 @@
                     <h1 class="lng-uDev">Написать продавцу (данный раздел на разработке)</h1>
                     <from method="POST" action="">
                         <textarea class="lng-yourMessage " disabled="" name="" id="" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
-                        <div class="lastL row d-flex justify-content-between mt-2">
-                            <div class="col-md-6 col-xs-6"><p class="text-center"><a href="#" class="myButton1" style="white-space: nowrap;">Написать продавцу</a></p></div>
-                            <div class="col-md-6 col-xs-6"><p class="text-center"><a href="https://wa.me/77772270088" class="myButton" style="white-space: nowrap;">Написать на WhatsApp</a></p></div>
-                           
-                            
+                        <div class="lastL d-flex flex-wrap">
+                            <button class="sendToUser lng-writeToSeller" style="margin-right:10px; display: flex; justify-content: center; align-items: center; padding: 0px 0px;">Написать продавцу</button>
+                            <a style="text-decoration: none;"  href="https://wa.me/77772270088">
+                                <p class="lng-writeWhats writeWhats"  style="display: flex; justify-content: center; align-items: center; ">Написать на WhatsApp</p>
+                            </a>
                         </div>
-                            
-                    
-                       
-                        
                     </from>
                 </div>
                 <div class="advice col-md-4 col-xs-12 mt-2">
@@ -264,9 +257,9 @@
             </div>
             <br>
           
-            <div class="d-flex twoButtonsBlock">
-                <button class="btn btn-outline-warning twobuttons " style="background-color:  #18ab29; color: white;">Редактировать и опубликовать</button>   
-            </div>
+            <a style="text-decoration: none;" href="https://wa.me/77772270088">
+                <p class="lng-writeWhats sendToUserWhats" style="margin: 0px; padding: 5px;">Редактировать и опубликовать</p>
+            </a>
 
             
             
@@ -279,16 +272,16 @@
 
 <!-- products end -->
 
-<footer class="backgroundNavbar text-center text-white ">
+<footer class=" text-center text-white ">
     <!-- Grid container -->
-    <div class="container p-4 d-flex">
+    <div class="container p-4 d-flex justify-content-around">
      
-    <div class="col-md-6 col-xs-12">
-        <h4 class="textF text-center">Usharal.kz</h4>
-        <p>@ 2022 usharal.kz - все права защищены</p>
+    <div class="col-md-6 col-xs-12 me-1">
+        <h4 class="textF text-center text-warning">Usharal.kz</h4>
+        <p>@ 2022 usharal.kz - все права<br> защищены</p>
     </div>
-    <div class="col-md-6 col-xs-12">
-        <h4 class="textF text-center">Контакты</h4>
+    <div class="col-md-6 col-xs-12 ms-1">
+        <h4 class="textF text-center text-warning">Контакты</h4>
         <p>usharal_kz@gmail.com</p>
         <p>+7(705) 332 2343</p>
     </div>

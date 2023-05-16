@@ -17,12 +17,10 @@
     border: none;
     background-color: transparent;
   }
-/* .innerMain {
+.innerMain {
     width: 90%;
-} */
-.backgroundNavbar, footer{
-    background-color: hsl(224,10%,21%) !important;
-  }
+}
+
 .mainImage {
     display: flex;
 }
@@ -180,7 +178,7 @@
 .MsgAndAdvice .advice {
     height: 65%;
     /* height: auto !important; */
-    background-color: #ffe8e8;
+    background-color: #b6eabc;
     border-radius: 10px;
     box-shadow: 4px 4px 18px 4px rgba(34, 60, 80, 0.2);
     border: 1px solid #2f223a5d;
@@ -377,7 +375,6 @@ button:hover {
   }
   
   .box {
-    width: 70% !important;
     margin-top: 30px !important;
     height: auto !important;
     padding-bottom: 20px;
@@ -444,16 +441,6 @@ button:hover {
     margin-bottom: 20px;
 }
 
-
-@media only screen and (max-width:800px) {
- 
-    .box {
-        width: 95% !important;
-        
-      }
-     
-}
-
 @media only screen and (max-width:672px) {
   
 .sendToUserWhats {
@@ -507,7 +494,7 @@ button:hover {
 
   .myButton {
 	background-color:transparent;
-	border-radius:10px;
+	border-radius:28px;
 	border:1px solid #18ab29;
 	display:inline-block;
 	cursor:pointer;
@@ -530,7 +517,7 @@ button:hover {
 .myButton1 {
 	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
 	background-color:#44c767;
-	border-radius:10px;
+	border-radius:28px;
 	border:1px solid #18ab29;
 	display:inline-block;
 	cursor:pointer;
@@ -550,22 +537,7 @@ button:hover {
 	top:1px;
 }
 
-.delete {
-    width: 100px !important;
-    height: 50px;
-    display: flex;
-    align-items: center;
-}
 
-.delete input {
-    background-color: #f3f3f3;
-    border-radius: 10px;
-    border: 1px solid #ffc53a;
-}
-
-.hidden {
-    display: hidden;
-}
 
 
   @media only screen and (min-width:440px) {
@@ -573,7 +545,6 @@ button:hover {
         width: 30%; /* set the desired width percentage */
   
     }
-
   }
 
   @media only screen and (min-width:750px) {
@@ -581,13 +552,6 @@ button:hover {
         width: 25%; /* set the desired width percentage */
   
     }
-  }
-
-  @media only screen and (min-width:410px) {
-    .twoButtonsBlock {
-        width: 100%;
-    }
-    
   }
 
 

@@ -12,7 +12,7 @@
 <body>
 <!-- Navbar -->
 
-<header id="header" class="backgroundNavbar fixed-top">
+<header id="header" class="bg-dark fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a href="./index.html" class="navbar-brand">usharal.kz</a>
@@ -78,65 +78,92 @@
 
 <!-- Navbar ends -->
 
-<div style="margin-top: 57px;"></div>
 
+    <div style="margin-top: 55px;"></div>
 <!-- Categories -->
 
-    <!-- <div class="categories ">
+    <div class="categories">
         
     
 
-    </categories> -->
+    </categories>
 
 <!-- End Categories -->
 <div class="w-100 bg-white pages">
     <div class="length">
-        <div class="messageText">Сообщения</div>
+        <div class="messageText">Мой профиль</div>
         <div class=" page mt-2 flex-wrap">
-            <a href="./messages.html" class="links"><div class="text" style="color: rgb(255,197,58); border-bottom: 3px solid rgb(255,197,58);">Сообщения</div></a>
+            <a href="./messages.html" class="links"><div class="text">Сообщения</div></a>
             <a href="./my-posts.html" class="links"><div class="text">Мои обьявления</div></a>
             <a href="./transaction.html" class="links"><div class="text">Платежи и счёт</div></a>
-            <a href="./profile.html" class="links"><div class="text">Мой профиль</div></a>
-            
+            <a href="./profile.html" class="links"><div class="text" style="color: rgb(255,197,58); border-bottom: 3px solid rgb(255,197,58);">Мой профиль</div></a>
         </div>
     </div>
 </div>
-<!-- products -->
 
-    <!-- <main>
+    
 
-
-
-        <div class="innerMainn">
-
-        <div class="row d-flex justify-content-around">
-            <div class="col-md-4 col-xs-12 contact-slide mt-2">
-                <div class="sellAndBye">
-                    <div class="sell activeLink btnSAB">Продаю</div>
-                    <div class="bye btnSAB">Покупаю</div>
+<div class="myProfileInner prof">
+            <div class="box boxForMainInformation">
+                <div class="mainTitle inner">
+                    <h1 class="lng-seeProfile">Посмотреть профиль</h1>
                 </div>
-                <div class="messageCategories">
-                    <span class="allMessages messagesType activeLink">Все</span>
-                    <span class="favouriteMessages messagesType">Избранные</span>
-                    <span class="trashMessages messagesType">Корзина</span>
+                <div class="spanWithInput inner">
+                    <div><span class="firstPart lng-yourProfile">Ваше имя</span></div>
+                    <div class="nameOfUser rInfo">
+                        Аскар
+                    </div>
                 </div>
+                <div class="spanWithInput inner">
+                    <div><span class="firstPart lng-photoOrLogo">Фото или логотип</span><span class="secondPart"> </span></div>
+                    <!-- <div class="boxForImage withBack">
+                            <img src="img/Vector.svg"width = "50"alt="" class="imageOfUser">
+                            <input type="file" onchange = "showFile(this)"accept="image/gif, image/jpeg, image/png, image/svg" name="" class="file">
+                            
+                        </div> -->
+                    
+                    <div class="imageBoxProfile">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="45" viewBox="0 0 50 45" fill="none">
+                            <path d="M40.9091 13.5V9H36.3636V4.5H40.9091V0H45.4545V4.5H50V9H45.4545V13.5H40.9091ZM4.54545 45C3.29545 45 2.22576 44.5597 1.33636 43.6792C0.445455 42.7972 0 41.7375 0 40.5V13.5C0 12.2625 0.445455 11.2035 1.33636 10.323C2.22576 9.441 3.29545 9 4.54545 9H11.7045L15.9091 4.5H29.5455V9H17.8977L13.75 13.5H4.54545V40.5H40.9091V20.25H45.4545V40.5C45.4545 41.7375 45.0098 42.7972 44.1205 43.6792C43.2295 44.5597 42.1591 45 40.9091 45H4.54545ZM22.7273 37.125C25.5682 37.125 27.9833 36.141 29.9727 34.173C31.9606 32.2035 32.9545 29.8125 32.9545 27C32.9545 24.1875 31.9606 21.7965 29.9727 19.827C27.9833 17.859 25.5682 16.875 22.7273 16.875C19.8864 16.875 17.4712 17.859 15.4818 19.827C13.4939 21.7965 12.5 24.1875 12.5 27C12.5 29.8125 13.4939 32.2035 15.4818 34.173C17.4712 36.141 19.8864 37.125 22.7273 37.125ZM22.7273 32.625C21.1364 32.625 19.7917 32.0812 18.6932 30.9937C17.5947 29.9062 17.0455 28.575 17.0455 27C17.0455 25.425 17.5947 24.0938 18.6932 23.0063C19.7917 21.9188 21.1364 21.375 22.7273 21.375C24.3182 21.375 25.6629 21.9188 26.7614 23.0063C27.8598 24.0938 28.4091 25.425 28.4091 27C28.4091 28.575 27.8598 29.9062 26.7614 30.9937C25.6629 32.0812 24.3182 32.625 22.7273 32.625Z" fill="#2A81DD"/>
+                            </svg>
+                    </div>
+                    
 
-                <br><br><br><br><br>
+
+                </div>
+                <div class="spanWithInput inner phoneSpan">
+                    <div><span class="firstPart">Номер WhatsApp</span><span class="secondPart"></span></div>
+                    
+                    <input class="userAddress rInfo" readonly="" type="text">
+                    
+                </div>
+                <div class="spanWithInput inner phoneSpan">
+                    <div><span class="firstPart">Телефон</span><span class="secondPart"></span></div>
+                    
+                    <input type="text" value="" readonly="" class="profileNum userAddress rInfo" re="">
+                    
+                </div>
+                <div class="saveLine inner">
+                    <button class="changeProfile lng-changeProfile">Редактировать профиль</button>
+                </div>
             </div>
 
-            <div class="col-md-7 ml-1 col-xs-12 msg-slide mt-2">
-                <br><br><br>
-            </div>
         </div>
 
-           
-        </div>
-    </main> -->
-    <div style="height: 540px;"></div>
+
+
+       
+
+    <div style="height: 100px;">
+    
+    
+    
+    
+    </div>
 
 <!-- products end -->
 
-<footer class="text-center text-white ">
+<footer class="bg-dark text-center text-white ">
     <!-- Grid container -->
     <div class="container p-4 d-flex justify-content-around">
      

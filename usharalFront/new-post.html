@@ -7,12 +7,13 @@
     <title>úsharal</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./new-post.css">
+    <!-- <link rel="stylesheet" href="./index.css"> -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <!-- Navbar -->
 
-<header id="header" class="bg-dark fixed-top">
+<header id="header" class="backgroundNavbar fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a href="./index.html" class="navbar-brand">usharal.kz</a>
@@ -132,21 +133,90 @@
             </div>
 
             <p class="zagolovki">Фото</p>
-            <div class="gallery ">
-                <div class="photo" style="border: 2px solid #ecb93a; border-radius: 5px
-                ;"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-            </div>
+            <!-- <div class="gallery ">
+                <input type="file" onchange="showFile(this)" maxlength=7 accept="image/*" name="post_photo" multiple="True" class="file" required max="7">
 
-            <div class="d-flex mt-3">
-                <button class="btn">Очистить</button>
-                <h4 class = "" style="color: red; margin-bottom: 0px; display: flex; justify-content:center; align-items:center; margin: 5px;">Совет</h4>
+                <input type="file" class="photo" onchange="showFile(this)" maxlength=7 accept="image/*" name="post_photo" multiple="True" class="file" required max="7" style="border: 2px solid #ecb93a; border-radius: 5px; "></input>
+                <div class="photo"></div>
+                <div class="photo"></div>
+                <div class="photo"></div>
+                <div class="photo"></div>
+                <div class="photo"></div>
+                <div class="photo"></div>
+                <div class="photo"></div>
+            </div> -->
+
+            <!-- <div class="bigBoxForImages"> -->
+                <!-- <span class="mainTextInfo ">Фото</span> -->
+                <!-- <button class="outimg" onclick="console.log(imgArr)"></button> -->
+                <div class="containerForAllImages gallery">
+                    <div class="photo" style="border: 5px solid #ffc53a">
+                        <img src="./img/Vector1.svg"  width="50" alt="" class="imageOfUserChoose">
+                        <input type="file" onchange="showFile(this)" maxlength=7 accept="image/*" name="post_photo" multiple="True" class="file" required max="7">
+                    </div>
+                    <div count='0' class="photo imageBox " oncontextmenu="return false">
+                        <img src="./img/Vector1.svg" width="50" alt="" 
+                            class="imageOfUser">
+                        <div class="backColor"></div>
+                    </div>
+                    <div count='1' class="photo imageBox " oncontextmenu="return false">
+
+                        <img src="./img/Vector1.svg"  alt="" class="imageOfUser">
+                        <div class="backColor"></div>
+                        
+                    </div>
+
+                    <div count='2' class="photo imageBox  " oncontextmenu="return false">
+
+                        <img src="./img/Vector1.svg"  alt="" class="imageOfUser">
+                        <div class="backColor"></div>
+                    </div>
+                    <div count='3' class="photo imageBox " oncontextmenu="return false">
+
+                        <img src="./img/Vector1.svg"  alt="" class="imageOfUser">
+                        <div class="backColor"></div>
+                        
+                    </div>
+                    <div count='4' class="photo imageBox " oncontextmenu="return false">
+
+                        <img src="./img/Vector1.svg"  alt="" class="imageOfUser">
+                        <div class="backColor"></div>
+                       
+                    </div>
+                    <div count='5' class="photo imageBox " oncontextmenu="return false">
+
+                        <img src="./img/Vector1.svg"  alt="" class="imageOfUser">
+                        <div class="backColor"></div>
+                        
+                    </div>
+                    <div count='6' class="photo imageBox " oncontextmenu="return false">
+
+                        <img src="./img/Vector1.svg"  alt="" class="imageOfUser">
+                        <div class="backColor"></div>
+                        
+                    </div>
+                
+                </div>
+                <!-- <button onclick="deleteAll()">Очистить</button> -->
+            <!-- </div> -->
+
+            <div class="d-flex flex-column mt-3">
+                <button class="btnClear" onclick="deleteAll()">Очистить</button>
+                <!-- <h4 class = "" style="color: red; margin-bottom: 0px; display: flex; justify-content:center; align-items:center; margin: 5px;">Совет</h4> -->
+                <!-- <div class="advice col-md-4 col-xs-12 mt-2">
+                    <h2 class="lng-advices">Советы</h2>
+                    <div class="lng-d1">- Если Вы нашли странные ошибки в словах или явно низкую цену, лучше сторониться таких объявлений.</div>
+                    <div class="lng-d2">- Старайтесь встречаться лично с продавцом для покупки товара.</div>
+                    <div class="lng-d3">- Не отправляйте деньги, пока не получили товар или услугу.</div>
+                    <div class="lng-d4">- Никогда не отправляйте предоплату!</div>
+                </div> -->
+                <ul style="margin-top: 20px;">
+                    <h3 style="color: green;">Советы</h3>
+                    <li style="color:rgb(11, 69, 11)">- Если Вы нашли странные ошибки в словах или явно низкую цену, <br>лучше сторониться таких объявлений.</li>
+                    <li style="color:rgb(11, 69, 11)">- Старайтесь встречаться лично с продавцом для покупки товара.</li>
+                    <li style="color:rgb(11, 69, 11)">- Не отправляйте деньги, пока не получили товар или услугу.</li>
+                    <li style="color:rgb(11, 69, 11)">- Никогда не отправляйте предоплату!</li>
+                </ul>
             </div>
 
             <div class="d-flex mt-3">
@@ -158,22 +228,23 @@
                 placeholder ="Подробно расскажите про товар. Подумайте какие подробности вы хотели бы узнать из объявления" 
                 maxlength="6000" id="message" cols="" rows="" 
                 name="post_description"class="text-area" 
-                oninput="titleProduct(this, 0)"></textarea>
+                oninput="titleProduct(this, 0)" maxlength="10"></textarea>
           
             <div class="counter">
-                <span class="currentValue littleText">0</span>
-                <span class="maxValue littleText">/6000</span>
+                <span id="result" class="currentValue littleText">0</span>
+                <span class="maxValue littleText">/&nbsp;6000</span>
             </div>
 
             <p class="zagolovki mt-2">Местожительство</p>
             <textarea 
-            placeholder ="Коротко объясните о своей локации для лучшего понимания" 
-            maxlength="6000" id="message" cols="" rows="" 
+            placeholder ="Коротко объясните о своей локации для лучшего понимания"  
+            maxlength="100" id="message2" cols="" rows=""
             name="post_description"class="text-area" 
             oninput="titleProduct(this, 0)"></textarea>
+            
             <div class="counter">
-                <span class="currentValue littleText">0</span>
-                <span class="maxValue littleText">/100</span>
+                <span id="result2" class="currentValue littleText">0</span>
+                <span class="maxValue littleText">/&nbsp;100</span>
             </div>
 
         </div>
@@ -235,15 +306,15 @@
 
     <!-- <div style="height: 300px;"></div> -->
 
-    <footer class="bg-dark text-center text-white ">
+    <footer class=" text-center text-white ">
         <!-- Grid container -->
-        <div class="container p-4 d-flex">
+        <div class="container p-4 d-flex justify-content-around">
          
-        <div class="col-md-6 col-xs-12">
+        <div class="col-md-6 col-xs-12 me-1">
             <h4 class="textF text-center text-warning">Usharal.kz</h4>
-            <p>@ 2022 usharal.kz - все права защищены</p>
+            <p>@ 2022 usharal.kz - все права<br> защищены</p>
         </div>
-        <div class="col-md-6 col-xs-12">
+        <div class="col-md-6 col-xs-12 ms-1">
             <h4 class="textF text-center text-warning">Контакты</h4>
             <p>usharal_kz@gmail.com</p>
             <p>+7(705) 332 2343</p>
@@ -258,5 +329,40 @@
     <!-- End Categries  -->
     <script src="https://kit.fontawesome.com/06eeb4d8bd.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- <script>
+        document.getElementsByClassName("photo")[0].style ="color: transparent; border: 3px solid  #ffc53a;";
+        let 
+    </script> -->
+
+    <script>
+        function wordCount(val) {
+            var wom = val.match(/./g);
+            return {
+                // charactersNoSpaces: val.replace(/./g, '').length,
+                characters: val.length,
+                words: wom ? wom.length : 0,
+                lines: val.split(/\r*\n/).length
+            };
+        }
+
+        var textarea = document.getElementById('message');
+        var result = document.getElementById('result');
+
+        textarea.addEventListener('input', function() {
+          var wc = wordCount(this.value);
+          result.innerHTML = (`${wc.words}`);
+        });
+
+        var textarea2 = document.getElementById('message2');
+        var result2 = document.getElementById('result2');
+
+        textarea2.addEventListener('input', function() {
+          var lc = wordCount(this.value);
+          result2.innerHTML = (`${lc.words}`);
+        });
+
+    </script>
+
+    <script src="./newPost.js"></script>
 </body>
 </html>

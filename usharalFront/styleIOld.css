@@ -17,12 +17,10 @@
     border: none;
     background-color: transparent;
   }
-/* .innerMain {
+.innerMain {
     width: 90%;
-} */
-.backgroundNavbar, footer{
-    background-color: hsl(224,10%,21%) !important;
-  }
+}
+
 .mainImage {
     display: flex;
 }
@@ -250,12 +248,21 @@
 }
 
 .lastL {
-
+    height: 100px;
+    display: flex;
+    width: 95%;
 }
 
 .sendToUser {
+    width: 200px;
+    height: 40px;
     font-size: 15px;
     background-color: #ffc53a;
+    color: #fff;
+    border: none;
+    padding: 0px 0px;
+    margin: 0;
+    border-radius: 7px;
 }
 
 .writeWhats{
@@ -271,8 +278,19 @@
 
 
 .sendToUserWhats {
+    margin-top: 30px;
     border: 3px solid #ffc53a;
+    /* white-space: nowrap; */
+    width: 50%;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
     border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
 }
 
 .buttonSame {
@@ -377,7 +395,6 @@ button:hover {
   }
   
   .box {
-    width: 70% !important;
     margin-top: 30px !important;
     height: auto !important;
     padding-bottom: 20px;
@@ -444,16 +461,6 @@ button:hover {
     margin-bottom: 20px;
 }
 
-
-@media only screen and (max-width:800px) {
- 
-    .box {
-        width: 95% !important;
-        
-      }
-     
-}
-
 @media only screen and (max-width:672px) {
   
 .sendToUserWhats {
@@ -488,106 +495,3 @@ button:hover {
     font-size: 24px;
     color: #ffc53a;
 }
-
-
-
-  .scrolling-container {
-    width: 100%; /* set the desired width */
-    overflow: auto; /* enable scrolling */
-    white-space: nowrap; /* prevent cards from wrapping */
-  }
-  
-  .card {
-    width: 50%; /* set the desired width percentage */
-    display: inline-block; /* display the cards next to each other */
-    margin-right: 10px; /* add some space between cards */
-    vertical-align: top; /* align the top edges of the cards */
-  }
-
-
-  .myButton {
-	background-color:transparent;
-	border-radius:10px;
-	border:1px solid #18ab29;
-	display:inline-block;
-	cursor:pointer;
-	color:#000000;
-	font-family:Arial;
-	font-size:15px;
-	padding: 9px 13px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #2f6627;
-}
-.myButton:hover {
-	background-color:transparent;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
-
-
-.myButton1 {
-	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
-	background-color:#44c767;
-	border-radius:10px;
-	border:1px solid #18ab29;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:17px;
-	padding:9px 15px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #2f6627;
-}
-.myButton1:hover {
-	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
-	background-color:#5cbf2a;
-}
-.myButton1:active {
-	position:relative;
-	top:1px;
-}
-
-.delete {
-    width: 100px !important;
-    height: 50px;
-    display: flex;
-    align-items: center;
-}
-
-.delete input {
-    background-color: #f3f3f3;
-    border-radius: 10px;
-    border: 1px solid #ffc53a;
-}
-
-.hidden {
-    display: hidden;
-}
-
-
-  @media only screen and (min-width:440px) {
-    .card{
-        width: 30%; /* set the desired width percentage */
-  
-    }
-
-  }
-
-  @media only screen and (min-width:750px) {
-    .card{
-        width: 25%; /* set the desired width percentage */
-  
-    }
-  }
-
-  @media only screen and (min-width:410px) {
-    .twoButtonsBlock {
-        width: 100%;
-    }
-    
-  }
-
-
