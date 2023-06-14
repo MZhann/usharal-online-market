@@ -506,6 +506,12 @@ main{
   border-radius: 2px;
 }
 
+.profileLink{
+  display: none;
+  color: white;
+}
+
+
 @media only screen and (max-width:3228px) {
  
   .innerMain{
@@ -551,6 +557,11 @@ main{
       /* display: none; */
       width: 100%;
   }
+  
+  .profileLink{
+    display: unset !important;
+  }
+
 .length{
       width: 90%;
   }

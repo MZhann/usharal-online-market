@@ -12,6 +12,8 @@
   
     padding: 20px;
   }
+  
+
   .no-button{
     outline: none;
     border: none;
@@ -445,43 +447,7 @@ button:hover {
 }
 
 
-@media only screen and (max-width:800px) {
- 
-    .box {
-        width: 95% !important;
-        
-      }
-     
-}
 
-@media only screen and (max-width:672px) {
-  
-.sendToUserWhats {
-    /* margin-top: 30px; */
-    /* border: 3px solid #ffc53a; */
-    /* white-space: nowrap; */
-    width: 80%;
-    /* font-size: 16px; */
-    /* text-align: center; */
-    /* margin: auto; */
-    /* border-radius: 7px; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* text-decoration: none; */
-    /* color: black; */
-}
-
-  }
-  
-
-@media only screen and (max-width:501px) {
-    .changeProfile {
-           width: 80%;
-           padding: 0 !important;
-           height: 45px;
-     }
- }
 
  .textF {
     cursor: pointer;
@@ -566,8 +532,60 @@ button:hover {
 .hidden {
     display: hidden;
 }
+.profileLink{
+    display: none;
+    color: white;
+  }
+@media only screen and (max-width:992px) {
+   
+    
+    .profileLink{
+      display: unset !important;
+    }
+  
+  }
+@media only screen and (max-width:800px) {
+ 
+    .box {
+        width: 95% !important;
+        
+      }
+     
+}
+@media only screen and (min-width:750px) {
+    .card{
+        width: 25%; /* set the desired width percentage */
+  
+    }
+  }
+@media only screen and (max-width:672px) {
+  
+.sendToUserWhats {
+    /* margin-top: 30px; */
+    /* border: 3px solid #ffc53a; */
+    /* white-space: nowrap; */
+    width: 80%;
+    /* font-size: 16px; */
+    /* text-align: center; */
+    /* margin: auto; */
+    /* border-radius: 7px; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-decoration: none; */
+    /* color: black; */
+}
 
+  }
+  
 
+@media only screen and (max-width:501px) {
+    .changeProfile {
+           width: 80%;
+           padding: 0 !important;
+           height: 45px;
+     }
+ }
   @media only screen and (min-width:440px) {
     .card{
         width: 30%; /* set the desired width percentage */
@@ -576,12 +594,7 @@ button:hover {
 
   }
 
-  @media only screen and (min-width:750px) {
-    .card{
-        width: 25%; /* set the desired width percentage */
   
-    }
-  }
 
   @media only screen and (min-width:410px) {
     .twoButtonsBlock {
