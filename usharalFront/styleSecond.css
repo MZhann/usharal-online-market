@@ -154,8 +154,8 @@ form.category {
   width: 67px;
 }
 
-.category:hover {
-}
+/* .category:hover {
+} */
 .category button:hover {
   height: 100%;
   background-color: #e5e5e5;
@@ -479,8 +479,10 @@ main{
   white-space: nowrap;
 }
 .innerMain{
+  width: 100%;
   /* d-flex justify-content-center flex-wrap */
   display: flex;
+  justify-content: center;
   /* justify-content: center; */
   flex-wrap: wrap;
   box-sizing:content-box;
@@ -511,6 +513,13 @@ main{
   color: white;
 }
 
+.lastL {
+    
+}
+
+.twobuttons {
+  margin-top: -5px;
+}
 
 @media only screen and (max-width:3228px) {
  
@@ -570,11 +579,44 @@ main{
   .innerMain{
     width: 648px;
   }
+  .name{
+    font-size: 11px !important; 
+  }
+  .twobuttons{
+    font-size: 15px;
+  } 
+  .spanNumber{
+    font-size: 11px !important;
+  }
+  .profLogo{
+    width: 45px !important;
+  }
+  
+  .myButton {
+     font-size: 12px !important;
+  }
+
+  .myButton1{
+    font-size: 12px !important;
+
+  }
 }
 
 @media only screen and (max-width:768px) {
   .two-choice{
     width: 80%;
+}
+.name{
+  font-size: 16.42px !important; 
+}
+.twobuttons{
+  font-size: 15px;
+} 
+.spanNumber{
+  font-size: 16.42px !important;
+}
+.profLogo{
+  width: 57px !important;
 }
   .product-image{
  
@@ -589,6 +631,15 @@ main{
   .innerMain{
     width: 664px;
   }
+  .myButton {
+    font-size: 16px !important;
+ }
+
+ .myButton1{
+  width: 199px;
+   font-size: 16px !important;
+
+ }
 }
 
 
@@ -612,6 +663,15 @@ main{
 
   }
 }
+
+@media only screen and (max-width:350px) {
+  
+  .innerMain{
+      width: 90%;
+
+  }
+}
+
 
 
 
